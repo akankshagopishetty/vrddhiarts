@@ -191,14 +191,14 @@ function Home() {
         <div className="container cta-panel">
           <div>
             <span className="eyebrow">Contact</span>
-            <h2>Tell us what you want to preserve.</h2>
-            <p>Share the occasion, artwork type, and any reference details. Pricing is always shared on request.</p>
+            <h2>Let's Bring Your Ideas to Life.</h2>
+            <p>Whether it's a personalized gift, handcrafted décor, preserved memories, or a unique creative project, we'd love to hear from you.</p>
+             <p>Share your requirements, and we'll guide you through the best options.</p>
           </div>
           <div className="cta-actions">
             <Button href={siteConfig.instagramUrl} target="_blank" rel="noreferrer" variant="secondary">
               <InstagramIcon size={18} /> Contact on Instagram
             </Button>
-            <Button to="/contact">Contact Us</Button>
           </div>
         </div>
       </section>

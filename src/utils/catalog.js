@@ -13,7 +13,7 @@ export const getProductsForPath = (segments = []) =>
 
 export const getFeaturedCategories = () =>
   allCategories.filter((category) =>
-    ['keychains', 'jewellery', 'customised-flower-preservation', 'photo-frames'].includes(category.slug),
+    ['keychains', 'deep-casting-varmala-preservation-frames', 'engagement-ring-platter', 'photo-frames'].includes(category.slug),
   )
 
 export const getFeaturedProducts = () => products.slice(0, 4)
