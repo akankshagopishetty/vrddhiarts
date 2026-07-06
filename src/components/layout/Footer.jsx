@@ -1,4 +1,3 @@
-import { Mail, MapPin, Phone } from 'lucide-react'
 import InstagramIcon from '../ui/InstagramIcon'
 import { Link } from 'react-router-dom'
 import { siteConfig } from '../../config/siteConfig'
@@ -16,18 +15,11 @@ function Footer() {
           <Link to="/about">About</Link>
           <Link to="/collections">Collections</Link>
           <Link to="/gallery">Gallery</Link>
-          <Link to="/contact">Contact</Link>
         </div>
 
         <div>
-          <h3>Contact</h3>
-          
-          <a href={`mailto:${siteConfig.email}`}>
-            <Mail size={16} /> {siteConfig.email}
-          </a>
-          <span>
-            <MapPin size={16} /> {siteConfig.address}
-          </span>
+          <h3>Policies</h3>
+          <Link to="/policies">Policies</Link>
         </div>
 
         <div>
@@ -40,10 +32,8 @@ function Footer() {
           ))}
         </div>
       </div>
-      </footer>
+    </footer>
   )
 }
 
 export default Footer
-
-

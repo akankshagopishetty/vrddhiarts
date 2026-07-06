@@ -1,4 +1,4 @@
-import { Gem, Heart, Sparkles } from 'lucide-react'
+import { Clock, Gem, Globe2, Heart, Sparkles, Timer } from 'lucide-react'
 import InstagramIcon from '../components/ui/InstagramIcon'
 import Button from '../components/ui/Button'
 import CategoryCard from '../components/ui/CategoryCard'
@@ -60,6 +60,23 @@ const workSteps = [
   'Your order is securely packed and delivered.',
 ]
 
+const deliveryLocations = {
+  India: [
+    'Hyderabad',
+    'Warangal',
+    'Hanamkonda',
+    'Mancherial',
+    'Jangaon',
+    'Vijayawada',
+    'Bengaluru',
+    'Chennai',
+    'Mumbai',
+    'Pune',
+    'Delhi',
+  ],
+  International: ['United States', 'United Kingdom'],
+}
+
 function Home() {
   return (
     <>
@@ -79,7 +96,6 @@ function Home() {
           <div className="hero-art reveal">
             <div className="hero-mark">
               <img src="/logo/logo.png" alt="Vrddhi Arts Logo" />
-
             </div>
             <div>
               <span>Custom made</span>
@@ -89,7 +105,18 @@ function Home() {
         </div>
       </section>
 
-            <section className="section muted-section">
+      <section className="anniversary-section">
+        <div className="container">
+          <img
+            className="anniversary-banner"
+            src="/images/anniversary-banner.png"
+            alt="VrddhiArts third anniversary celebration banner"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section className="section muted-section">
         <div className="container split-section story-section">
           <div>
             <span className="eyebrow">Our Story</span>
@@ -105,15 +132,14 @@ function Home() {
             </blockquote>
             <p className="story-lead">That question stayed with me.</p>
             <p>
-              I've always been someone who found joy in creating—long before I learned engineering formulas or wrote 
-              programming code. While life led me to pursue a Bachelor's in Technology, my heart always found its 
+              I've always been someone who found joy in creating long before I learned engineering formulas or wrote
+              programming code. While life led me to pursue a Bachelor's in Technology, my heart always found its
               way back to art. Creating wasn't something I chose; it was simply a part of who I was.
             </p>
             <Button to="/about" variant="secondary">Read Full Story</Button>
           </div>
         </div>
       </section>
-
 
       <section className="section">
         <div className="container">
@@ -188,18 +214,60 @@ function Home() {
       </section>
 
       <section className="section cta-section">
-        <div className="container cta-panel">
+        <div className="container cta-panel contact-panel">
           <div>
             <span className="eyebrow">Contact</span>
-            <h2>Let's Bring Your Ideas to Life.</h2>
-            <p>Whether it's a personalized gift, handcrafted décor, preserved memories, or a unique creative project, we'd love to hear from you.</p>
-             <p>Share your requirements, and we'll guide you through the best options.</p>
+            <h2>Let's Create Something Beautiful Together</h2>
+            <p>Every creation begins with your idea.</p>
+            <p>Share your occasion, artwork preferences, custom requirements, or reference images, and we'll help transform your vision into a handcrafted masterpiece.</p>
+            <p>Customized quotations are provided based on your requirements.</p>
           </div>
           <div className="cta-actions">
             <Button href={siteConfig.instagramUrl} target="_blank" rel="noreferrer" variant="secondary">
               <InstagramIcon size={18} /> Contact on Instagram
             </Button>
           </div>
+          <div className="contact-info-grid">
+            <article>
+              <Clock size={20} />
+              <span>Business Hours</span>
+              <strong>Monday to Saturday: 10:00 AM - 9:00 PM</strong>
+            </article>
+            <article>
+              <Timer size={20} />
+              <span>Typical Response Time</span>
+              <strong>Within 24-48 hours</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section className="section muted-section delivery-section">
+        <div className="container">
+          <SectionHeader
+            eyebrow="Shipping Coverage"
+            title="We Deliver Across"
+            text="Proudly delivering handcrafted creations across India and internationally."
+            align="center"
+          />
+          <div className="delivery-groups">
+            {Object.entries(deliveryLocations).map(([group, locations]) => (
+              <article className="delivery-group" key={group}>
+                <div className="delivery-group-title">
+                  <Globe2 size={18} />
+                  <h3>{group}</h3>
+                </div>
+                <div className="location-chips">
+                  {locations.map((location) => (
+                    <span key={location}>{location}</span>
+                  ))}
+                </div>
+              </article>
+            ))}
+          </div>
+          <p className="delivery-note">
+            "Don't see your location? Contact us on Instagram-we'll do our best to deliver to you."
+          </p>
         </div>
       </section>
     </>

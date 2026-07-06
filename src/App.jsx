@@ -3,10 +3,10 @@ import Layout from './components/layout/Layout'
 import About from './pages/About'
 import CategoryPage from './pages/CategoryPage'
 import Collections from './pages/Collections'
-import Contact from './pages/Contact'
 import Gallery from './pages/Gallery'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
+import Policies from './pages/Policies'
 import ProductDetails from './pages/ProductDetails'
 
 const router = createBrowserRouter([
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
       { path: 'collections/*', element: <CategoryPage /> },
       { path: 'gallery', element: <Gallery /> },
       { path: 'product/:productId', element: <ProductDetails /> },
-      { path: 'contact', element: <Contact /> },
+      { path: 'policies', element: <Policies /> },
       { path: '404', element: <NotFound /> },
       { path: '*', element: <NotFound /> },
     ],

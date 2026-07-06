@@ -9,7 +9,7 @@ const navItems = [
   { label: 'About', to: '/about' },
   { label: 'Collections', to: '/collections' },
   { label: 'Gallery', to: '/gallery' },
-  { label: 'Contact', to: '/contact' },
+  { label: 'Policies', to: '/policies' },
 ]
 
 function Navbar() {
@@ -55,4 +55,3 @@ function Navbar() {
 }
 
 export default Navbar
-
