@@ -235,7 +235,7 @@ function Home() {
             <article>
               <Timer size={20} />
               <span>Typical Response Time</span>
-              <strong>Within 24-48 hours</strong>
+              <strong>Within 24 hours</strong>
             </article>
           </div>
         </div>
@@ -244,7 +244,7 @@ function Home() {
       <section className="section muted-section delivery-section">
         <div className="container">
           <SectionHeader
-            eyebrow="Shipping Coverage"
+            eyebrow="Destinations We Have Reached"
             title="Where Our Creations Have Reached"
             text="Over the past three years, our handcrafted creations have found their way to homes across India and beyond. Every destination represents a story, a celebration, and the trust of someone who chose VrddhiArts."
             align="center"

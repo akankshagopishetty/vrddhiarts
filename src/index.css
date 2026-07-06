@@ -93,9 +93,20 @@ p {
   gap: 24px;
 }
 
+.navbar.container {
+  width: min(100%, 1280px);
+  padding-inline: 32px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
 .brand img {
-  width: 132px;
-  height: auto;
+  width: auto;
+  height: 62px;
 }
 
 .desktop-nav,
@@ -616,6 +627,14 @@ p {
 }
 
 @media (max-width: 980px) {
+  .navbar.container {
+    padding-inline: 24px;
+  }
+
+  .brand img {
+    height: 58px;
+  }
+
   .desktop-nav {
     display: none;
   }
@@ -683,8 +702,12 @@ p {
     min-height: 72px;
   }
 
+  .navbar.container {
+    padding-inline: 16px;
+  }
+
   .brand img {
-    width: 116px;
+    height: 52px;
   }
 
   .hero,
