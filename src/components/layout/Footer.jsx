@@ -7,7 +7,6 @@ function Footer() {
     <footer className="site-footer">
       <div className="container footer-grid">
         <div className="footer-brand">
-          <img src="/logo/logo.png" alt={`${siteConfig.businessName} logo`} />
         </div>
 
         <div>

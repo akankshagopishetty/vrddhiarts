@@ -119,8 +119,7 @@ function Home() {
       <section className="section muted-section">
         <div className="container split-section story-section">
           <div>
-            <span className="eyebrow">Our Story</span>
-            <h2>Our Story</h2>
+            <h2>About</h2>
           </div>
           <div className="story-content">
             <blockquote className="story-tagline">
@@ -246,8 +245,8 @@ function Home() {
         <div className="container">
           <SectionHeader
             eyebrow="Shipping Coverage"
-            title="We Deliver Across"
-            text="Proudly delivering handcrafted creations across India and internationally."
+            title="Where Our Creations Have Reached"
+            text="Over the past three years, our handcrafted creations have found their way to homes across India and beyond. Every destination represents a story, a celebration, and the trust of someone who chose VrddhiArts."
             align="center"
           />
           <div className="delivery-groups">
@@ -266,7 +265,7 @@ function Home() {
             ))}
           </div>
           <p className="delivery-note">
-            "Don't see your location? Contact us on Instagram-we'll do our best to deliver to you."
+            "Is your city missing? We'd love to make it our next destination. Place your order and become a part of the VrddhiArts journey."
           </p>
         </div>
       </section>
