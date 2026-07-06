@@ -77,7 +77,9 @@ function Home() {
             </div>
           </div>
           <div className="hero-art reveal">
-            <div className="hero-mark">VA</div>
+            <div className="hero-mark">
+              <img src="public\logo\logo.png" alt="Description of image" />
+            </div>
             <div>
               <span>Custom made</span>
               <strong>Designed exclusively for you, with your story at the heart of every creation.</strong>
