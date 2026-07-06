@@ -78,7 +78,8 @@ function Home() {
           </div>
           <div className="hero-art reveal">
             <div className="hero-mark">
-              <img src="public\logo\logo.png" alt="Description of image" />
+              <img src="/logo/logo.png" alt="Vrddhi Arts Logo" />
+
             </div>
             <div>
               <span>Custom made</span>
@@ -88,16 +89,31 @@ function Home() {
         </div>
       </section>
 
-      <section className="section muted-section">
+            <section className="section muted-section">
         <div className="container split-section story-section">
           <div>
             <span className="eyebrow">Our Story</span>
             <h2>Our Story</h2>
           </div>
-          <p>Our story will be added soon.</p>
-          <Button to="/about" variant="secondary">Read About Us</Button>
+          <div className="story-content">
+            <blockquote className="story-tagline">
+              Some dreams arrive with a business plan.<br />
+              Ours arrived through a simple conversation.
+            </blockquote>
+            <blockquote className="story-quote">
+              "What if creativity could become something more than just a hobby?"
+            </blockquote>
+            <p className="story-lead">That question stayed with me.</p>
+            <p>
+              I've always been someone who found joy in creating—long before I learned engineering formulas or wrote 
+              programming code. While life led me to pursue a Bachelor's in Technology, my heart always found its 
+              way back to art. Creating wasn't something I chose; it was simply a part of who I was.
+            </p>
+            <Button to="/about" variant="secondary">Read Full Story</Button>
+          </div>
         </div>
       </section>
+
 
       <section className="section">
         <div className="container">

@@ -9,7 +9,6 @@ function Footer() {
       <div className="container footer-grid">
         <div className="footer-brand">
           <img src="/logo/logo.png" alt={`${siteConfig.businessName} logo`} />
-          <p>{siteConfig.tagline}</p>
         </div>
 
         <div>
@@ -22,9 +21,7 @@ function Footer() {
 
         <div>
           <h3>Contact</h3>
-          <a href={`tel:${siteConfig.phone}`}>
-            <Phone size={16} /> {siteConfig.phone}
-          </a>
+          
           <a href={`mailto:${siteConfig.email}`}>
             <Mail size={16} /> {siteConfig.email}
           </a>
